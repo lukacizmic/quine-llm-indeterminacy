@@ -1,0 +1,22 @@
+.env
+*.sqlite3
+!quine_experiment.sqlite3
+__pycache__/
+*.pyc
+.venv/
+.venv-1/
+.vscode/
+
+# Unrelated exported chat/account data, not part of the experiment
+conversations-000/
+projects-000/
+memories-000/
+light_metadata-000/
+
+# THINGS image dataset (large, license-restricted; see README for how to obtain)
+object_images/
+50_things_images/
+_images-metadata_things.tsv
+
+# Verbose per-run debug logs
+run_log*.txt

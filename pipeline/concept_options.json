@@ -1,0 +1,512 @@
+{
+  "_meta": {
+    "status": "DRAFT - requires human review before use in any real trial",
+    "schema": "For each concept: an invented (nonsense) word standing in for the concept, and 5 options matching the finalized coding scheme in 'Indeterminacy of Reference in Large Language Models.docx': a=object itself, b=property/feature, c=function, d=abstract category, e=part of the object. (Note: this letter order differs from the original notebook, which used a=object,b=function,c=property,d=abstract,e=part; remapped here to match the current docx spec.)",
+    "caveats": [
+      "Decoy word choice is a researcher judgment call and directly affects difficulty/plausibility; review each row for quality and naturalness before freezing.",
+      "Invented words were picked to be phonetically plausible nonwords with no known English/other-language meaning as far as I could check; re-verify this, especially against any languages your models may draw on.",
+      "'pony' replaces 'crystal' in the concept list per user decision (2026-09-13).",
+      "Multiword concepts use the 50_things_images folder naming (underscores/hyphens)."
+    ]
+  },
+  "hobbyhorse": {
+    "invented_word": "flenta",
+    "options": {
+      "a": "hobbyhorse",
+      "b": "wooden",
+      "c": "riding",
+      "d": "toy",
+      "e": "horse's head"
+    }
+  },
+  "pulpit": {
+    "invented_word": "vorlim",
+    "options": {
+      "a": "pulpit",
+      "b": "elevated",
+      "c": "preaching",
+      "d": "furniture",
+      "e": "railing"
+    }
+  },
+  "patty": {
+    "invented_word": "brusnik",
+    "options": {
+      "a": "patty",
+      "b": "round",
+      "c": "grilling",
+      "d": "meat",
+      "e": "crust"
+    }
+  },
+  "yoke": {
+    "invented_word": "camdel",
+    "options": {
+      "a": "yoke",
+      "b": "u-shaped",
+      "c": "harnessing",
+      "d": "tool",
+      "e": "strap"
+    }
+  },
+  "cordon_bleu": {
+    "invented_word": "plindor",
+    "options": {
+      "a": "cordon bleu",
+      "b": "breaded",
+      "c": "frying",
+      "d": "dish",
+      "e": "cheese filling"
+    }
+  },
+  "gumdrop": {
+    "invented_word": "zestrin",
+    "options": {
+      "a": "gumdrop",
+      "b": "sticky",
+      "c": "chewing",
+      "d": "candy",
+      "e": "sugar coating"
+    }
+  },
+  "tortellini": {
+    "invented_word": "farnok",
+    "options": {
+      "a": "tortellini",
+      "b": "ring-shaped",
+      "c": "boiling",
+      "d": "pasta",
+      "e": "filling"
+    }
+  },
+  "garbage": {
+    "invented_word": "trevlin",
+    "options": {
+      "a": "garbage",
+      "b": "crumpled",
+      "c": "throwing away",
+      "d": "waste",
+      "e": "pile"
+    }
+  },
+  "rag": {
+    "invented_word": "sompel",
+    "options": {
+      "a": "rag",
+      "b": "worn",
+      "c": "wiping",
+      "d": "cloth",
+      "e": "stains"
+    }
+  },
+  "outfit": {
+    "invented_word": "quindel",
+    "options": {
+      "a": "outfit",
+      "b": "matching",
+      "c": "wearing",
+      "d": "clothing",
+      "e": "sleeves"
+    }
+  },
+  "charger": {
+    "invented_word": "brastin",
+    "options": {
+      "a": "charger",
+      "b": "plugged-in",
+      "c": "charging",
+      "d": "device",
+      "e": "cable"
+    }
+  },
+  "potpie": {
+    "invented_word": "weltash",
+    "options": {
+      "a": "potpie",
+      "b": "flaky",
+      "c": "baking",
+      "d": "pie",
+      "e": "crust"
+    }
+  },
+  "swimsuit": {
+    "invented_word": "florniq",
+    "options": {
+      "a": "swimsuit",
+      "b": "stretchy",
+      "c": "swimming",
+      "d": "beachwear",
+      "e": "strap"
+    }
+  },
+  "coat_rack": {
+    "invented_word": "drenval",
+    "options": {
+      "a": "coat rack",
+      "b": "polelike",
+      "c": "hanging",
+      "d": "furniture",
+      "e": "hook"
+    }
+  },
+  "oar": {
+    "invented_word": "kimbrel",
+    "options": {
+      "a": "oar",
+      "b": "long",
+      "c": "rowing",
+      "d": "rowing equipment",
+      "e": "blade"
+    }
+  },
+  "clothes": {
+    "invented_word": "astbome",
+    "options": {
+      "a": "clothes",
+      "b": "colorful",
+      "c": "hanging",
+      "d": "apparel",
+      "e": "sleeve"
+    }
+  },
+  "roller": {
+    "invented_word": "vindash",
+    "options": {
+      "a": "roller",
+      "b": "cylindrical",
+      "c": "rolling",
+      "d": "tool",
+      "e": "handle"
+    }
+  },
+  "hummus": {
+    "invented_word": "trelfin",
+    "options": {
+      "a": "hummus",
+      "b": "creamy",
+      "c": "dipping",
+      "d": "food",
+      "e": "surface"
+    }
+  },
+  "pony": {
+    "invented_word": "geldrun",
+    "options": {
+      "a": "pony",
+      "b": "four-legged",
+      "c": "grazing",
+      "d": "animal",
+      "e": "mane"
+    }
+  },
+  "sunroof": {
+    "invented_word": "palisk",
+    "options": {
+      "a": "sunroof",
+      "b": "rectangular",
+      "c": "opening",
+      "d": "car component",
+      "e": "hinge"
+    }
+  },
+  "wok": {
+    "invented_word": "hendrol",
+    "options": {
+      "a": "wok",
+      "b": "curved",
+      "c": "stir-frying",
+      "d": "cookware",
+      "e": "handle"
+    }
+  },
+  "station_wagon": {
+    "invented_word": "tarbuin",
+    "options": {
+      "a": "station wagon",
+      "b": "elongated",
+      "c": "driving",
+      "d": "vehicle",
+      "e": "trunk"
+    }
+  },
+  "woman": {
+    "invented_word": "brolfind",
+    "options": {
+      "a": "woman",
+      "b": "smiling",
+      "c": "posing",
+      "d": "person",
+      "e": "face"
+    }
+  },
+  "kettle": {
+    "invented_word": "welkash",
+    "options": {
+      "a": "kettle",
+      "b": "metallic",
+      "c": "boiling",
+      "d": "appliance",
+      "e": "spout"
+    }
+  },
+  "cornbread": {
+    "invented_word": "drimsol",
+    "options": {
+      "a": "cornbread",
+      "b": "crumbly",
+      "c": "baking",
+      "d": "food",
+      "e": "crust"
+    }
+  },
+  "cot": {
+    "invented_word": "florka",
+    "options": {
+      "a": "cot",
+      "b": "foldable",
+      "c": "lying",
+      "d": "furniture",
+      "e": "frame"
+    }
+  },
+  "napkin": {
+    "invented_word": "clemdor",
+    "options": {
+      "a": "napkin",
+      "b": "folded",
+      "c": "wiping",
+      "d": "cloth",
+      "e": "corner"
+    }
+  },
+  "fur_coat": {
+    "invented_word": "vestrim",
+    "options": {
+      "a": "fur coat",
+      "b": "fluffy",
+      "c": "wearing",
+      "d": "clothing",
+      "e": "collar"
+    }
+  },
+  "curling_iron": {
+    "invented_word": "plonash",
+    "options": {
+      "a": "curling iron",
+      "b": "metallic",
+      "c": "curling",
+      "d": "appliance",
+      "e": "barrel"
+    }
+  },
+  "rearview_mirror": {
+    "invented_word": "grendil",
+    "options": {
+      "a": "rearview mirror",
+      "b": "reflective",
+      "c": "reflecting",
+      "d": "car part",
+      "e": "frame"
+    }
+  },
+  "doorknocker": {
+    "invented_word": "tasklin",
+    "options": {
+      "a": "doorknocker",
+      "b": "metallic",
+      "c": "knocking",
+      "d": "hardware",
+      "e": "ring handle"
+    }
+  },
+  "binder": {
+    "invented_word": "velmond",
+    "options": {
+      "a": "binder",
+      "b": "rigid",
+      "c": "organizing",
+      "d": "office material",
+      "e": "cover"
+    }
+  },
+  "wrapping_paper": {
+    "invented_word": "brendak",
+    "options": {
+      "a": "wrapping paper",
+      "b": "colorful",
+      "c": "wrapping",
+      "d": "decorative material",
+      "e": "crease"
+    }
+  },
+  "first-aid_kit": {
+    "invented_word": "zolwin",
+    "options": {
+      "a": "first-aid kit",
+      "b": "portable",
+      "c": "medically treating",
+      "d": "supplies",
+      "e": "bandage"
+    }
+  },
+  "hummingbird": {
+    "invented_word": "fendral",
+    "options": {
+      "a": "hummingbird",
+      "b": "tiny",
+      "c": "hovering",
+      "d": "bird",
+      "e": "beak"
+    }
+  },
+  "scoop": {
+    "invented_word": "vashlin",
+    "options": {
+      "a": "scoop",
+      "b": "curved",
+      "c": "scooping",
+      "d": "tool",
+      "e": "handle"
+    }
+  },
+  "deer": {
+    "invented_word": "krendol",
+    "options": {
+      "a": "deer",
+      "b": "brown-furred",
+      "c": "grazing",
+      "d": "animal",
+      "e": "antler"
+    }
+  },
+  "electric_chair": {
+    "invented_word": "plemsor",
+    "options": {
+      "a": "electric chair",
+      "b": "wired",
+      "c": "executing",
+      "d": "furniture",
+      "e": "strap"
+    }
+  },
+  "airbag": {
+    "invented_word": "dorevash",
+    "options": {
+      "a": "airbag",
+      "b": "inflatable",
+      "c": "inflating",
+      "d": "car part",
+      "e": "fabric"
+    }
+  },
+  "grater": {
+    "invented_word": "quilfen",
+    "options": {
+      "a": "grater",
+      "b": "sharp",
+      "c": "grating",
+      "d": "tool",
+      "e": "blade"
+    }
+  },
+  "bead": {
+    "invented_word": "vornish",
+    "options": {
+      "a": "bead",
+      "b": "round",
+      "c": "stringing",
+      "d": "ornament",
+      "e": "hole"
+    }
+  },
+  "gate": {
+    "invented_word": "trandel",
+    "options": {
+      "a": "gate",
+      "b": "barred",
+      "c": "opening",
+      "d": "barrier",
+      "e": "hinge"
+    }
+  },
+  "boxing_gloves": {
+    "invented_word": "sklanor",
+    "options": {
+      "a": "boxing gloves",
+      "b": "padded",
+      "c": "punching",
+      "d": "sportswear",
+      "e": "strap"
+    }
+  },
+  "bamboo": {
+    "invented_word": "brimtal",
+    "options": {
+      "a": "bamboo",
+      "b": "green",
+      "c": "growing",
+      "d": "plant",
+      "e": "stalk"
+    }
+  },
+  "crutch": {
+    "invented_word": "denvolk",
+    "options": {
+      "a": "crutch",
+      "b": "adjustable",
+      "c": "supporting",
+      "d": "mobility aid",
+      "e": "handle"
+    }
+  },
+  "locker": {
+    "invented_word": "gravlin",
+    "options": {
+      "a": "locker",
+      "b": "metallic",
+      "c": "storing",
+      "d": "furniture",
+      "e": "door"
+    }
+  },
+  "stool": {
+    "invented_word": "flendo",
+    "options": {
+      "a": "stool",
+      "b": "backless",
+      "c": "sitting",
+      "d": "furniture",
+      "e": "leg"
+    }
+  },
+  "orange": {
+    "invented_word": "morvek",
+    "options": {
+      "a": "orange",
+      "b": "round",
+      "c": "peeling",
+      "d": "fruit",
+      "e": "peel"
+    }
+  },
+  "horse": {
+    "invented_word": "brendil",
+    "options": {
+      "a": "horse",
+      "b": "muscular",
+      "c": "galloping",
+      "d": "animal",
+      "e": "mane"
+    }
+  },
+  "map": {
+    "invented_word": "tolvash",
+    "options": {
+      "a": "map",
+      "b": "folded",
+      "c": "navigating",
+      "d": "document",
+      "e": "legend"
+    }
+  }
+}

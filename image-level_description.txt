@@ -1,0 +1,48 @@
+CONTENTS image level
+
+-- IMAGE METADATA THINGS --
+
+recognizability:
+= Participants were presented with THINGS and THINGSplus images and were asked to choose the best object label from a drop down menu providing the labels of the 1854 THINGS concepts. For words with several meanings (i.e. homonyms), additional context was provided in parentheses, e.g. bat ("animal"), or bat ("sports").
+-- display_label: correct image label as shown in the drop down menu
+-- answer:  labels chosen by the participants across all trials featuring the respective image 
+-- RT: work_time of every response across all trials featuring the image
+-- recognizability_N-correct: number of correct participant responses 
+-- recognizability_most-common-label: most frequently used label by the participants (regardless if correct)
+-- recognizability: recognizability score computed as N_correct / N_ratings
+-- recognizability-homonyms: recognizability score also considering as correct if a participant chose the homonymous label (e.g. if bat "animal" is correct, this score also considers the answer bat ("sports") as correct, as it was likely chosen by accident)
+-- recognizability-close: recognizability score also considering as correct if the correct label was part of the chosen label (e.g. if "egg" is correct, this score also considers "egg yolk" as correct)
+
+nameability:
+= Human-generated labels, naming consistency, and nameability scores for the 26,107 images
+-- nameability_alternative-label: alternative spelling of the THINGS concept noun (e.g. "yo-yo" vs. "yo yo" vs. "yoyo")	
+-- nameability_label1: participant generated labels for the prominent object depicted in each image	
+-- nameability_label1_moreEdit: additional corrections of label1, removal of over-specific labels e.g. ("green acorn" to "acorn", "shepherd dog" to "dog").
+-- nameability_label2: labels for all other objects in the image (e.g., in the background)
+-- nameability_most-frequent-rating: most frequently used label by the participants (regardless if correct)
+-- nameability_naming-consistency: fraction of the most frequently used label 
+-- nameability: fraction of labels identical to the THINGS object noun
+-- nameability-SE: SE_naming_consistency: Standard error of the scores	
+
+memorability: 
+-- memorability_cr: corrected recognition (CR) scores for all 26,107 THINGS images.
+
+-- CorNet-similarity-matrices_things--			
+= Path containing similarity matrices:
+-- CorNet-similarity-matrices_description_things.txt                  Description of similarity files
+-- CorNet-similarity-matrices_code-squareformq_things.m               Function to convert lower triangular vectors to matrices and vice versa
+-- CorNet-similarity-matrices_cmat-layer-V1-output_things.mat         Similarity of layer V1 output
+-- CorNet-similarity-matrices_cmat-layer-V2-output_things.mat         Similarity of layer V2 output
+-- CorNet-similarity-matrices_cmat-layer-V4-output_things.mat         Similarity of layer V4 output
+-- CorNet-similarity-matrices_cmat-layer-IT-output_things.mat			Similarity of layer IT output
+-- CorNet-similarity-matrices_cmat-layer-decoder-output_things.mat	Similarity of layer decoder output
+-- CorNet-similarity-matrices_cmat-layer-decoder-avgpool_things.mat	Similarity of layer decoder avgpool     	
+
+-- image_paths.csv/.mat -- 
+Relative paths of images             		
+
+-- GENERAL VARIABLES --
+- image: path to image within images folder
+- Word: THINGS concept noun
+- uniqueID: unique concept ID
+- N_ratings: number of ratings per image
