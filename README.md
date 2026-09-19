@@ -10,7 +10,7 @@ of "being a rabbit."
 
 This project asks whether an analogous ontological underdetermination shows
 up empirically when LLMs are shown images of a novel, invented word and
-asked what it refers to — and whether making that underdetermination
+asked what it refers to and whether making that underdetermination
 explicit in the prompt (a "Quine-inspired" framing) shifts model responses
 toward greater ontological uncertainty.
 
