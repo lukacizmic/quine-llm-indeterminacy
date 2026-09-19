@@ -26,7 +26,6 @@ toward greater ontological uncertainty.
 | `plan.md` | Design/implementation plan for the expanded experiment and pipeline. |
 | `analysis_plots/` | Generated figures (entropy distributions by model/condition, moderation scatterplots). |
 | `analysis_exports/` | Exported CSVs from qualitative/content analysis of raw model responses. |
-| `original_version/` | Earlier drafts, notebooks, and analyses from the initial (pilot-scale) version of the experiment. |
 | `things_dataset_check.ipynb` | Notebook used to inspect and validate the THINGS image dataset subset used as stimuli. |
 | `list_of_top_50_concepts.txt` | The 50 concepts (THINGS dataset categories) used as stimuli. |
 | `image-level_description.txt` | Notes on the per-image metadata used for stimulus selection. |
